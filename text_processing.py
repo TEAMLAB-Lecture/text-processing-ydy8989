@@ -28,14 +28,14 @@ def no_vowels(input_string):
             ex - "Ths s n xmpl."
 
         Examples:
-            >>> import text_processing as tp
-            >>> input_string1 = "This is an example."
-            >>> tp.normalize(input_string1)
-            "Ths s n xmpl."
-            >>> input_string2 = "We love Python!"
-            >>> tp.normalize(input_string2)
+            # >>> import text_processing as tp
+            # >>> input_string1 = "This is an example."
+            # >>> tp.normalize(input_string1)
+            # "Ths s n xmpl."
+            # >>> input_string2 = "We love Python!"
+            # >>> tp.normalize(input_string2)
             ''W lv Pythn!'
     """
-    ''.join([i for i in input_string if i not in ['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U']])
-    no_vowel_string = None
+
+    no_vowel_string = ''.join([i for i in input_string if i not in ['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U']])
     return no_vowel_string
